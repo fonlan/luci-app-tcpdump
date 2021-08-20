@@ -12,4 +12,4 @@ It can be used to capture live ethernet traffic for analysis.
 `make menuconfig`
 
 
-### Fork from [KFERMercer](https://github.com/KFERMercer/luci-app-tcpdump).
+### Fork from [KFERMercer](https://github.com/KFERMercer/luci-app-tcpdump) and fix some small bug.
