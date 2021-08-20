@@ -312,7 +312,11 @@ function pump_file(file, mime_str)
 		luci.http.prepare_content("application/octet-stream")
 	end
 	luci.ltn12.pump.all(reader, luci.http.write)
-	fh:close()
+	if file == nil then
+		io.close()
+	else
+		fh:close()
+	end
 end
 
 function capture_get(file_type, cap_name)
